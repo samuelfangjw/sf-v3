@@ -1,6 +1,6 @@
-import type { ReactNode } from 'react'
-import Navbar from './navbar'
-import Footer from './footer'
+import type { ReactNode } from "react";
+import Navbar from "./navbar/navbar";
+import Footer from "./footer";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
@@ -9,7 +9,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <main>{children}</main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
