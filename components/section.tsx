@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Center, Container, Heading } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 const Section = ({
@@ -9,12 +9,14 @@ const Section = ({
   title: string;
 }) => {
   return (
-    <Box ml={{ base: 8, md: 16 }} mr={{ base: 8, md: 16 }}>
-      <Heading as="h2" size="md">
-        {title}
-      </Heading>
+    <Container>
+      <Center>
+        <Heading as="h2" size="md">
+          {title}
+        </Heading>
+      </Center>
       {children}
-    </Box>
+    </Container>
   );
 };
 
