@@ -15,9 +15,10 @@ const MenuItems = ({ isOpen }: { isOpen: boolean }) => {
         direction={{ base: "column", sm: "row" }}
         pt={{ base: 4, md: 0}}
       >
-        <MenuItem to="/">Link 1</MenuItem>
-        <MenuItem to="/">Link 2</MenuItem>
-        <MenuItem to="/">Link 3</MenuItem>
+        <MenuItem to="/">About</MenuItem>
+        <MenuItem to="/">Work</MenuItem>
+        <MenuItem to="/">Projects</MenuItem>
+        <MenuItem to="/">Contact</MenuItem>
       </Stack>
     </Box>
   );
