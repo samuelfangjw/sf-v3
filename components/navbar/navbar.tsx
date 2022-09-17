@@ -35,6 +35,7 @@ const Navbar = () => {
       p={6}
       bg={bgColor}
       boxShadow={isAtTop ? "none" : "xl"}
+      zIndex="overlay"
       sx={{ position: "fixed", top: "0" }}
     >
       <HamburgerToggleButton toggle={toggle} isOpen={isOpen} />

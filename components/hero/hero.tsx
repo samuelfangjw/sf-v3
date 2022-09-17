@@ -1,8 +1,8 @@
 import {
   Box,
   Center,
-  Flex,
   Highlight,
+  Stack,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -13,21 +13,23 @@ const Hero = () => {
   return (
     <Box w="100vw" h="100vh" bg={bgColor}>
       <Center w="100vw" h="100vh">
-        <Flex direction="column">
+        <Stack justifyContent="center">
           <Text fontSize="xl">Hi there &#128075;! I&apos;m</Text>
           <Text fontSize="6xl" fontWeight="bold">
             Samuel Fang,
           </Text>
           <Text>
+            a{" "}
             <Highlight
               query="software engineer"
               styles={{ px: "2", py: "1", rounded: "full", bg: "orange.100" }}
             >
-              a software engineer with a keen interest in software architecture
-              and design patterns.
-            </Highlight>
+              software engineer
+            </Highlight>{" "}
+            with a keen interest in software engineering principles,
+            architecture and design patterns.
           </Text>
-        </Flex>
+        </Stack>
       </Center>
     </Box>
   );

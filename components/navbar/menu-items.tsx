@@ -15,7 +15,7 @@ const MenuItems = ({ isOpen }: { isOpen: boolean }) => {
         direction={{ base: "column", sm: "row" }}
         pt={{ base: 4, md: 0}}
       >
-        <MenuItem to="/">About</MenuItem>
+        <MenuItem to="#about">About</MenuItem>
         <MenuItem to="/">Work</MenuItem>
         <MenuItem to="/">Projects</MenuItem>
         <MenuItem to="/">Contact</MenuItem>
