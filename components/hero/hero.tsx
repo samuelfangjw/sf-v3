@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 
 const Hero = () => {
-  const bgColor = useColorModeValue("white", "gray.800");
+  const bgColor = useColorModeValue("gray.50", "gray.800");
 
   return (
     <Box w="100vw" h="100vh" bg={bgColor}>

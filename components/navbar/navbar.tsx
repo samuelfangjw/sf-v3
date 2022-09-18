@@ -16,7 +16,7 @@ const Navbar = () => {
     setIsAtTop(position == 0);
   };
 
-  const bgColor = useColorModeValue("white", "gray.800");
+  const bgColor = useColorModeValue("gray.50", "gray.800");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
