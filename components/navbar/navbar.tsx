@@ -8,6 +8,7 @@ import MenuItems from "./menu-items";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const onClose = () => setIsOpen(false);
 
   const [isAtTop, setIsAtTop] = useState(true);
   const handleScroll = () => {
@@ -40,7 +41,7 @@ const Navbar = () => {
     >
       <HamburgerToggleButton toggle={toggle} isOpen={isOpen} />
       <Logo />
-      <MenuItems isOpen={isOpen} />
+      <MenuItems isOpen={isOpen} onClose={onClose} />
       <ColorModeButton />
     </Flex>
   );

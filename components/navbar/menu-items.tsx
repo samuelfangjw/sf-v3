@@ -1,7 +1,13 @@
 import { Box, Stack } from "@chakra-ui/react";
 import MenuItem from "./menu-item";
 
-const MenuItems = ({ isOpen }: { isOpen: boolean }) => {
+const MenuItems = ({
+  isOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) => {
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -13,12 +19,12 @@ const MenuItems = ({ isOpen }: { isOpen: boolean }) => {
         align="center"
         justify={{ base: "center", sm: "space-between", md: "flex-end" }}
         direction={{ base: "column", sm: "row" }}
-        pt={{ base: 4, md: 0}}
+        pt={{ base: 4, md: 0 }}
       >
-        <MenuItem to="#about">About</MenuItem>
-        <MenuItem to="/">Work</MenuItem>
-        <MenuItem to="/">Projects</MenuItem>
-        <MenuItem to="/">Contact</MenuItem>
+        <MenuItem to="#about" onClick={onClose}>About</MenuItem>
+        <MenuItem to="#work" onClick={onClose}>Work</MenuItem>
+        <MenuItem to="#projects" onClick={onClose}>Projects</MenuItem>
+        <MenuItem to="#contact" onClick={onClose}>Contact</MenuItem>
       </Stack>
     </Box>
   );

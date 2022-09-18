@@ -22,7 +22,7 @@ const Hero = () => {
             a{" "}
             <Highlight
               query="software engineer"
-              styles={{ px: "2", py: "1", rounded: "full", bg: "orange.100" }}
+              styles={{ px: "2", py: "1", rounded: "full", bg: "orange.300" }}
             >
               software engineer
             </Highlight>{" "}
