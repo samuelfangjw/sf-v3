@@ -9,6 +9,7 @@ import {
 
 const Hero = () => {
   const bgColor = useColorModeValue("gray.50", "gray.800");
+  const highlightColor = useColorModeValue("orange.400", "orange.300")
 
   return (
     <Box w="100vw" h="100vh" bg={bgColor}>
@@ -22,7 +23,7 @@ const Hero = () => {
             a{" "}
             <Highlight
               query="software engineer"
-              styles={{ px: "2", py: "1", rounded: "full", bg: "orange.300" }}
+              styles={{ px: "2", py: "1", rounded: "full", bg: highlightColor }}
             >
               software engineer
             </Highlight>{" "}

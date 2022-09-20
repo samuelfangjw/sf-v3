@@ -1,10 +1,12 @@
 import Section from "../section";
-import { Link, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
+import { Link, List, ListIcon, ListItem, Text, useColorModeValue } from "@chakra-ui/react";
 import { FiMail } from "react-icons/fi";
 import constants from "../../utils/constants";
 import { FaGithub } from "react-icons/fa";
 
 const Contact = () => {
+  const color = useColorModeValue("orange.400", "orange.300")
+
   return (
     <Section id="contact" title="Get In Touch">
       <Text>
@@ -19,7 +21,7 @@ const Contact = () => {
           </Text>
           <Link
             href={`mailto:${constants.email.value}`}
-            color="orange.300"
+            color={color}
             isExternal
           >
             {constants.email.display}
@@ -30,7 +32,7 @@ const Contact = () => {
           <Text display="inline" fontWeight="bold">
             GitHub:
           </Text>
-          <Link href={constants.github.value} color="orange.300" isExternal>
+          <Link href={constants.github.value} color={color} isExternal>
             {constants.github.display}
           </Link>
         </ListItem>

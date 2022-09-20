@@ -4,7 +4,7 @@ import Section from "../section";
 import AboutPhoto from "./photo";
 
 const About = () => {
-  // const color = useColorModeValue("")
+  const color = useColorModeValue("orange.400", "orange.300")
 
   return (
     <Section id="about" title="About Me">
@@ -22,7 +22,7 @@ const About = () => {
               I&apos;m currently working as a full stack developer (part time)
               at{" "}
               <NextLink href="https://www.voltality.io" passHref>
-                <Link color='orange.300' fontWeight="bold">Voltality</Link>
+                <Link color={color} fontWeight="bold">Voltality</Link>
               </NextLink>
               . I&apos;m also a final year student at the National University of
               Singapore (NUS), pursuing a Bachelor of Computing in Computer

@@ -1,4 +1,4 @@
-import { Box, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Box, Heading, ListItem, UnorderedList, useColorModeValue } from "@chakra-ui/react";
 
 const JobCard = ({
   company,
@@ -9,12 +9,14 @@ const JobCard = ({
   roles: string[];
   achievements: string[];
 }) => {
+  const color = useColorModeValue("orange.400", "orange.300")
+
   const subHeadings = roles.map((val, idx) => {
     const strs = val.split("|");
 
     return (
       <Box key={idx}>
-        <Heading as="h4" size="sm" color="orange.300" display="inline">
+        <Heading as="h4" size="sm" color={color} display="inline">
           {strs[0]}
         </Heading>
         <Heading as="h4" size="sm" display="inline">

@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <Box>
       <Text fontSize="lg" fontWeight="bold">
-        Logo
+        SF
       </Text>
     </Box>
   );
