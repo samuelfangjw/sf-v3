@@ -1,10 +1,36 @@
-import { Grid, GridItem, Link, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  Link,
+  Stack,
+  Tag,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import NextLink from "next/link";
 import Section from "../section";
 import AboutPhoto from "./photo";
 
 const About = () => {
-  const color = useColorModeValue("orange.400", "orange.300")
+  const color = useColorModeValue("orange.400", "orange.300");
+  const tagsArr = [
+    "Go",
+    "Java",
+    "Typescript",
+    "PostgreSQL",
+    "MongoDB",
+    "Nuxt.js",
+    "Angular",
+    "Kubernetes",
+    "RabbitMQ",
+    "Redis",
+  ];
+  const tags = tagsArr.map((val, idx) => (
+    <Tag key={idx} margin={1}>
+      {val}
+    </Tag>
+  ));
 
   return (
     <Section id="about" title="About Me">
@@ -22,7 +48,9 @@ const About = () => {
               I&apos;m currently working as a full stack developer (part time)
               at{" "}
               <NextLink href="https://www.voltality.io" passHref>
-                <Link color={color} fontWeight="bold">Voltality</Link>
+                <Link color={color} fontWeight="bold">
+                  Voltality
+                </Link>
               </NextLink>
               . I&apos;m also a final year student at the National University of
               Singapore (NUS), pursuing a Bachelor of Computing in Computer
@@ -30,6 +58,11 @@ const About = () => {
               Distinction honours degree classification with focus areas in
               Software Engineering and Computer Security.
             </Text>
+            <Text>
+              Here&apos;s some of the languages and tools I have been working
+              with recently:
+            </Text>
+            <Box>{tags}</Box>
           </Stack>
         </GridItem>
         <GridItem p="8">
