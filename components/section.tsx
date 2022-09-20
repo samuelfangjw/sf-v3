@@ -14,7 +14,7 @@ const Section = ({
     <Box marginX={{ base: "8", sm: "16", md: "32" }}>
       <Box id={id} position="relative" top="-120px" left="0px" />
       <Center>
-        <Heading as="h2" size="lg">
+        <Heading as="h2" size={{base: "md", sm: "lg"}}>
           {title}
         </Heading>
       </Center>
