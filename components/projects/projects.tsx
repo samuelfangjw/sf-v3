@@ -1,30 +1,10 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import Section from "../section";
-import ProjectCard, { Project } from "./project-card";
-
-const projectsData: Project[] = [
-  {
-    title: "TEAMMATES",
-    description:
-      "An online feedback management system for education used by more than 800,000 users worldwide.",
-    githubLink: "https://github.com/TEAMMATES/teammates",
-    projectLink: "https://teammatesv4.appspot.com/",
-    pageLink: "/",
-    tech: ["Angular", "Java", "Google Cloud"],
-  },
-  {
-    title: "Source Academy",
-    description:
-      "A computer-mediated learning environment for studying the structure and interpretation of computer programs.",
-    githubLink: "",
-    projectLink: "https://sourceacademy.org/sicpjs/index",
-    pageLink: "/",
-    tech: ["React", "Node.js"],
-  },
-];
+import ProjectCard from "./project-card";
+import ProjectsData from "./project-details";
 
 const Projects = () => {
-  const projectCards = projectsData.map((project, idx) => (
+  const projectCards = ProjectsData.map((project, idx) => (
     <GridItem key={idx}>
       <ProjectCard
         title={project.title}
@@ -40,7 +20,11 @@ const Projects = () => {
   return (
     <Section id="projects" title="Some Projects I've Worked On">
       <Grid
-        templateColumns={{ base: "1f1", sm: "1fr 1fr", md: "1fr 1fr 1fr" }}
+        templateColumns={{
+          base: "minmax(0, 1fr)",
+          sm: "repeat(2, minmax(0, 1fr))",
+          md: "repeat(3, minmax(0, 1fr))",
+        }}
         gap={4}
         marginY={4}
       >

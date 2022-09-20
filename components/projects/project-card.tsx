@@ -14,15 +14,7 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-
-export type Project = {
-  title: string;
-  description: string;
-  githubLink: string;
-  projectLink: string;
-  pageLink: string;
-  tech: string[];
-};
+import { Project } from "./project-details";
 
 const ProjectCard = ({
   title,
@@ -70,26 +62,39 @@ const ProjectCard = ({
     </LinkBox>
   );
 
-  const tags = tech.map((val, idx) => <Tag key={idx} bg="none">{val}</Tag>);
+  const tags = tech.map((val, idx) => (
+    <Tag key={idx} bg="none">
+      {val}
+    </Tag>
+  ));
 
   return (
-    <Box bg={bgColor} boxShadow="lg" p={4} borderRadius={5}>
-      <Heading as="h3" size="md">
+    <Flex
+      bg={bgColor}
+      boxShadow="lg"
+      p={6}
+      borderRadius={5}
+      height="100%"
+      flexDirection="column"
+      flexWrap="nowrap"
+    >
+      <Heading as="h3" size="md" marginBottom={2}>
         {title}
       </Heading>
       <Text>{description}</Text>
-      <Flex justifyContent="space-between" alignItems="center">
-        {moreInfoButton}
+      <Box flexGrow={1} />
+      <Flex justifyContent="space-between" alignItems="center" marginY={1}>
         <HStack>
           {githubButton}
           {projectButton}
         </HStack>
+        {moreInfoButton}
       </Flex>
       <Divider />
-      <HStack spacing={1} marginTop={3}>
+      <Flex gap={1} marginTop={3} wrap="wrap">
         {tags}
-      </HStack>
-    </Box>
+      </Flex>
+    </Flex>
   );
 };
 
