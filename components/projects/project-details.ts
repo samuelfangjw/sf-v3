@@ -36,15 +36,6 @@ const ProjectsData: Project[] = [
     tech: ["React", "Express", "Redis", "AWS", "Docker"],
   },
   {
-    title: "StrawHats",
-    description:
-      "A web auction site for collectibles with live video streaming and real-time bidding capabilities.",
-    githubLink: "https://github.com/StrawHats12/CS3219_strawhats",
-    projectLink: "",
-    pageLink: "",
-    tech: ["React", "Express", "Redis", "AWS", "Docker"],
-  },
-  {
     title: "Carbon Economy",
     description:
       "A web and mobile application that helps tackle carbon pollution by incentivising businesses and consumers to make greener decisions through a green credits system and smart visualisation dashboard backed by a cryptographically verifiable transactions.",
