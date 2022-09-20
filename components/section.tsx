@@ -12,14 +12,16 @@ const Section = ({
 }) => {
   return (
     <Box marginX={{ base: "8", sm: "16", md: "32" }}>
-      <Box id={id} position="relative" top="-120px" left="0px"/>
+      <Box id={id} position="relative" top="-120px" left="0px" />
       <Center>
         <Heading as="h2" size="lg">
           {title}
         </Heading>
       </Center>
       <Center>
-        <Box maxWidth="1000px">{children}</Box>
+        <Box maxWidth="1000px" paddingY={{ base: "4", sm: "8" }}>
+          {children}
+        </Box>
       </Center>
     </Box>
   );
