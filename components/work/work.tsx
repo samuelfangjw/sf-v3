@@ -24,6 +24,7 @@ const Work = () => {
           top="5"
           bottom="0"
           left="-35px"
+          borderRadius={3}
         ></Box>
         {jobs}
       </Stack>
