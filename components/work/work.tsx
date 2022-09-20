@@ -1,9 +1,18 @@
 import { Box, Stack, useColorModeValue } from "@chakra-ui/react";
 import Section from "../section";
 import JobCard from "./job-card";
+import JobDetails from "./job-details";
 
 const Work = () => {
   const timelineColor = useColorModeValue("gray.800", "gray.100");
+  const jobs = JobDetails.map((job, idx) => (
+    <JobCard
+      key={idx}
+      company={job.company}
+      roles={job.roles}
+      achievements={job.achievements}
+    />
+  ));
 
   return (
     <Section id="work" title="Where I've Worked">
@@ -16,24 +25,7 @@ const Work = () => {
           bottom="0"
           left="-35px"
         ></Box>
-        <JobCard
-          company="Voltality"
-          roles={[
-            "Software Engineer (Part Time) | Aug 2022 - Present",
-            "Software Engineer Intern | May - July 2022",
-          ]}
-          achievements={["Bullet Point 1", "Bullet Point 2", "Bullet Point 3"]}
-        />
-        <JobCard
-          company="TEAMMATES (Open Source)"
-          roles={["Maintainer/Contributer | June 2021 - Present"]}
-          achievements={["Bullet Point 1", "Bullet Point 2", "Bullet Point 3"]}
-        />
-        <JobCard
-          company="Source Academy"
-          roles={["Web Developer | May 2021 - May 2022"]}
-          achievements={["Bullet Point 1", "Bullet Point 2", "Bullet Point 3"]}
-        />
+        {jobs}
       </Stack>
     </Section>
   );

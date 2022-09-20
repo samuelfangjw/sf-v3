@@ -15,7 +15,7 @@ const ProjectsData: Project[] = [
     githubLink: "https://github.com/TEAMMATES/teammates",
     projectLink: "https://teammatesv4.appspot.com/",
     pageLink: "",
-    tech: ["Angular", "Java", "Google Cloud"],
+    tech: ["Angular", "Typescript", "Java", "Google Cloud"],
   },
   {
     title: "Source Academy",

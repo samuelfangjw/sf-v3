@@ -50,7 +50,7 @@ const JobCard = ({
         {company}
       </Heading>
       {subHeadings}
-      <UnorderedList spacing={2} ml={8}>
+      <UnorderedList spacing={1} ml={8}>
         {bulletPoints}
       </UnorderedList>
     </Box>
