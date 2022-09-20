@@ -2,14 +2,14 @@ import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
 const config: ThemeConfig = {
-  initialColorMode: "dark",
+  initialColorMode: "light",
   useSystemColorMode: false,
 };
 
 const styles = {
   global: (props: any) => ({
     "html, body": {
-      background: mode("gray.50", "gray.800")(props), //mode(light mode color, dark mode color)
+      background: mode("gray.50", "gray.800")(props),
     },
   }),
 };
