@@ -1,11 +1,21 @@
-import { Stack } from "@chakra-ui/react";
+import { Box, Stack, useColorModeValue } from "@chakra-ui/react";
 import Section from "../section";
 import JobCard from "./job-card";
 
 const Work = () => {
+  const timelineColor = useColorModeValue("gray.800", "gray.100");
+
   return (
     <Section id="work" title="Where I've Worked">
-      <Stack spacing={4} marginY={4}>
+      <Stack spacing={4} marginY={4} marginLeft="40px" position="relative">
+        <Box
+          position="absolute"
+          width="6px"
+          bgColor={timelineColor}
+          top="5"
+          bottom="0"
+          left="-35px"
+        ></Box>
         <JobCard
           company="Voltality"
           roles={[
