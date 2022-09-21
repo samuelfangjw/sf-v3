@@ -1,14 +1,4 @@
-import {
-  Box,
-  Grid,
-  GridItem,
-  Link,
-  Stack,
-  Tag,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
-import NextLink from "next/link";
+import { Box, Grid, GridItem, Stack, Tag, Text } from "@chakra-ui/react";
 import Section from "../section";
 import TextLink from "../text-link";
 import AboutPhoto from "./photo";
