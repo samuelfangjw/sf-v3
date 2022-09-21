@@ -15,11 +15,11 @@ const Section = ({
       <Box
         id={id}
         position="relative"
-        top={{ base: "-80px", sm: "-120px" }}
+        top={{ base: "-85px", sm: "-120px" }}
         left="0px"
       />
       <Center>
-        <Heading as="h2" size={{ base: "md", sm: "lg" }}>
+        <Heading as="h2" size="lg" textAlign="center">
           {title}
         </Heading>
       </Center>
