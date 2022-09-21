@@ -1,5 +1,5 @@
-import { Flex, useColorModeValue } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { Flex, useColorModeValue, useOutsideClick } from "@chakra-ui/react";
+import { useEffect, useRef, useState } from "react";
 import ColorModeButton from "./color-mode-button";
 import HamburgerToggleButton from "./hamburger-button";
 import Logo from "./logo";
@@ -7,16 +7,16 @@ import MenuItems from "./menu-items";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
+  const bgColor = useColorModeValue("gray.50", "gray.800");
+  const ref = useRef<HTMLDivElement>(null);
+
   const toggle = () => setIsOpen(!isOpen);
   const onClose = () => setIsOpen(false);
-
-  const [isAtTop, setIsAtTop] = useState(true);
   const handleScroll = () => {
     const position = window.pageYOffset;
     setIsAtTop(position == 0);
   };
-
-  const bgColor = useColorModeValue("gray.50", "gray.800");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -26,6 +26,12 @@ const Navbar = () => {
     };
   }, []);
 
+  useOutsideClick({
+    ref: ref,
+    enabled: isOpen,
+    handler: onClose,
+  });
+
   return (
     <Flex
       as="nav"
@@ -33,11 +39,12 @@ const Navbar = () => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      p={{base: 2, sm: 5}}
+      p={{ base: 2, sm: 5 }}
       bg={bgColor}
       boxShadow={isAtTop ? "none" : "xl"}
       zIndex="overlay"
       sx={{ position: "fixed", top: "0" }}
+      ref={ref}
     >
       <HamburgerToggleButton toggle={toggle} isOpen={isOpen} />
       <Logo />
