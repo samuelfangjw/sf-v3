@@ -41,7 +41,7 @@ const Navbar = () => {
       w="100%"
       p={{ base: 2, sm: 5 }}
       bg={bgColor}
-      boxShadow={isAtTop ? "none" : "xl"}
+      boxShadow={isAtTop ? "none" : "lg"}
       zIndex="overlay"
       sx={{ position: "fixed", top: "0" }}
       ref={ref}
