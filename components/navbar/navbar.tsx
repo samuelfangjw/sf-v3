@@ -33,7 +33,7 @@ const Navbar = () => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      p={6}
+      p={{base: 2, sm: 5}}
       bg={bgColor}
       boxShadow={isAtTop ? "none" : "xl"}
       zIndex="overlay"
