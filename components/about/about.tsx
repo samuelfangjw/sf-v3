@@ -13,7 +13,9 @@ import Section from "../section";
 import AboutPhoto from "./photo";
 
 const About = () => {
-  const color = useColorModeValue("orange.400", "orange.300");
+  const linkColor = useColorModeValue("orange.400", "orange.300");
+  const linkHoverColor = useColorModeValue("orange.500", "orange.400");
+
   const tagsArr = [
     "Go",
     "Java",
@@ -48,8 +50,12 @@ const About = () => {
               I&apos;m currently working as a full stack developer (part time)
               at{" "}
               <NextLink href="https://www.voltality.io" passHref>
-                <Link color={color} fontWeight="bold">
-                  Voltality
+                <Link
+                  color={linkColor}
+                  _hover={{ color: linkHoverColor }}
+                  fontWeight="bold"
+                >
+                  <Text as="u">Voltality</Text>
                 </Link>
               </NextLink>
               . I&apos;m also a final year student at the National University of
