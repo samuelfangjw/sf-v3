@@ -19,7 +19,7 @@ const JobDetails: Job[] = [
   },
   {
     company: "TEAMMATES (Open Source)",
-    roles: ["Maintainer/Contributer | June 2021 - Present"],
+    roles: ["Maintainer/Contributor | June 2021 - Present"],
     achievements: [
       "Maintainer for an online feedback management system for education used by more than 800,000 users worldwide.",
       "Designed and planned two major feature enhancements.",
