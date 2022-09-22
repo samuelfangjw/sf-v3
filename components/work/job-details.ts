@@ -28,7 +28,7 @@ const JobDetails: Job[] = [
   },
   {
     company: "Source Academy",
-    roles: ["Web Developer | May 2021 - May 2022"],
+    roles: ["Web Developer | May 2021 - Apr 2022"],
     achievements: [
       "Designed and developed an award winning interactive online textbook used by thousands of students and multiple university courses worldwide.",
       "Application allows readers to play with code snippets without leaving the context of the textbook as well as use various tools to visualise data structures and reason about programs.",
