@@ -12,8 +12,8 @@ const JobDetails: Job[] = [
       "Software Engineer Intern | May - July 2022",
     ],
     achievements: [
-      "Designed and developed a system using Go, PostgreSQL, Redis, RabbitMQ and Nuxt.js to process specific transactions, aggregate statistics and run asynchronous tasks.",
-      "Helped plan and execute the splitting of a Monolith system into Microservices as well as a migration from MongoDB to PostgreSQL.",
+      "Designed and developed a customer facing system using Go, PostgreSQL, Redis, RabbitMQ and Nuxt.js to process specific transactions, aggregate statistics and run asynchronous tasks.",
+      "Worked with a senior engineer to plan and execute the splitting of a Monolitic system into Microservices as well as a migration from MongoDB to PostgreSQL.",
       "Built a Redis based asynchronous task queue in Node.js to process and automatically schedule long running jobs.",
     ],
   },
@@ -22,7 +22,7 @@ const JobDetails: Job[] = [
     roles: ["Maintainer/Contributor | June 2021 - Present"],
     achievements: [
       "Maintainer for an online feedback management system for education used by more than 800,000 users worldwide.",
-      "Designed and planned two major feature enhancements.",
+      "Designed and planned multiple major feature enhancements.",
       "Tech Stack: Angular, Typescript, Java, Google Cloud",
     ],
   },
