@@ -22,7 +22,7 @@ const MenuItems = ({
         pt={{ base: 4, md: 0 }}
       >
         <ButtonLink
-          link="#about"
+          link="/#about"
           onClick={onClose}
           variant="ghost"
           width="100%"
@@ -33,7 +33,7 @@ const MenuItems = ({
           Work
         </ButtonLink>
         <ButtonLink
-          link="#projects"
+          link="/#projects"
           onClick={onClose}
           variant="ghost"
           width="100%"
@@ -41,7 +41,7 @@ const MenuItems = ({
           Projects
         </ButtonLink>
         <ButtonLink
-          link="#contact"
+          link="/#contact"
           onClick={onClose}
           variant="ghost"
           width="100%"
