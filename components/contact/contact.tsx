@@ -10,6 +10,7 @@ import {
 import { FiMail } from "react-icons/fi";
 import constants from "../../utils/constants";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import TextLink from "../text-link";
 
 const Contact = () => {
   const color = useColorModeValue("orange.400", "orange.300");
@@ -26,32 +27,32 @@ const Contact = () => {
           <Text display="inline" fontWeight="bold">
             Email:
           </Text>
-          <Link
-            href={`mailto:${constants.email.value}`}
-            color={color}
+          <TextLink
+            link={`mailto:${constants.email.value}`}
+            // color={color}
             marginLeft="36px"
             isExternal
           >
             {constants.email.display}
-          </Link>
+          </TextLink>
         </ListItem>
         <ListItem>
           <ListIcon as={FaGithub} />
           <Text display="inline" fontWeight="bold">
             GitHub:
           </Text>
-          <Link href={constants.github.value} color={color} marginLeft="22px" isExternal>
+          <TextLink link={constants.github.value} marginLeft="22px" isExternal>
             {constants.github.display}
-          </Link>
+          </TextLink>
         </ListItem>
         <ListItem>
           <ListIcon as={FaLinkedin} />
           <Text display="inline" fontWeight="bold">
             LinkedIn:
           </Text>
-          <Link href={constants.linkedin.value} color={color} marginLeft="10px" isExternal>
+          <TextLink link={constants.linkedin.value} color={color} marginLeft="10px" isExternal>
             {constants.linkedin.display}
-          </Link>
+          </TextLink>
         </ListItem>
       </List>
     </Section>

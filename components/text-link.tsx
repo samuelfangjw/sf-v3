@@ -21,12 +21,12 @@ const TextLink = ({
       <Link
         color={linkColor}
         _hover={{ color: linkHoverColor }}
-        fontWeight="bold"
+        textDecoration="underline"
         display="inline"
         {...(isExternal && { isExternal: true })}
         {...props}
       >
-        <Text as="u">{children}</Text>
+        {children}
       </Link>
     </NextLink>
   );
