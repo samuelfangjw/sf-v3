@@ -11,7 +11,7 @@ const Section = ({
   id: string;
 }) => {
   return (
-    <Box marginX={{ base: "8", sm: "16", md: "32" }}>
+    <Box marginX={{ base: "8", sm: "16", md: "32" }} marginTop={16}>
       <Box
         id={id}
         position="relative"
