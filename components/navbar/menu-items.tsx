@@ -1,5 +1,5 @@
 import { Box, Stack } from "@chakra-ui/react";
-import MenuItem from "./menu-item";
+import ButtonLink from "../button-link";
 
 const MenuItems = ({
   isOpen,
@@ -21,10 +21,33 @@ const MenuItems = ({
         direction={{ base: "column", sm: "row" }}
         pt={{ base: 4, md: 0 }}
       >
-        <MenuItem to="#about" onClick={onClose}>About</MenuItem>
-        <MenuItem to="#work" onClick={onClose}>Work</MenuItem>
-        <MenuItem to="#projects" onClick={onClose}>Projects</MenuItem>
-        <MenuItem to="#contact" onClick={onClose}>Contact</MenuItem>
+        <ButtonLink
+          link="#about"
+          onClick={onClose}
+          variant="ghost"
+          width="100%"
+        >
+          About
+        </ButtonLink>
+        <ButtonLink link="#work" onClick={onClose} variant="ghost" width="100%">
+          Work
+        </ButtonLink>
+        <ButtonLink
+          link="#projects"
+          onClick={onClose}
+          variant="ghost"
+          width="100%"
+        >
+          Projects
+        </ButtonLink>
+        <ButtonLink
+          link="#contact"
+          onClick={onClose}
+          variant="ghost"
+          width="100%"
+        >
+          Contact
+        </ButtonLink>
       </Stack>
     </Box>
   );

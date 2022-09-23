@@ -5,10 +5,12 @@ import NextLink from "next/link";
 const TextLink = ({
   children,
   link,
+  isExternal,
   ...props
 }: {
   children: ReactNode;
   link: string;
+  isExternal?: boolean;
   [key: string]: any;
 }) => {
   const linkColor = useColorModeValue("orange.400", "orange.300");
@@ -21,10 +23,10 @@ const TextLink = ({
         _hover={{ color: linkHoverColor }}
         fontWeight="bold"
         display="inline"
+        {...(isExternal && { isExternal: true })}
+        {...props}
       >
-        <Text as="u" {...props}>
-          {children}
-        </Text>
+        <Text as="u">{children}</Text>
       </Link>
     </NextLink>
   );

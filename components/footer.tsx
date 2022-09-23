@@ -13,7 +13,7 @@ const Footer = () => {
     <Box textAlign="center" position="relative" m="8">
       <Divider />
       <Box mt="4" fontSize="sm">
-        <TextLink link="https://github.com/samuelfangjw/sf-v3">
+        <TextLink link="https://github.com/samuelfangjw/sf-v3" isExternal>
           Designed & Built
         </TextLink>
         <Text display="inline"> by Samuel Fang, 2022</Text>

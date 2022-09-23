@@ -1,19 +1,17 @@
 import {
   Box,
-  Button,
   Divider,
   Flex,
   Heading,
   HStack,
   Icon,
-  LinkBox,
-  LinkOverlay,
   Tag,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import ButtonLink from "../button-link";
 import { Project } from "./project-details";
 
 const ProjectCard = ({
@@ -27,39 +25,21 @@ const ProjectCard = ({
   const bgColor = useColorModeValue("white", "gray.700");
 
   const moreInfoButton = pageLink && (
-    <LinkBox>
-      <Button marginY={2}>
-        <NextLink href={pageLink} passHref>
-          <LinkOverlay>
-            <Text display="block">More Info</Text>
-          </LinkOverlay>
-        </NextLink>
-      </Button>
-    </LinkBox>
+    <ButtonLink link={pageLink}>
+      <Text display="block">More Info</Text>
+    </ButtonLink>
   );
 
   const githubButton = githubLink && (
-    <LinkBox>
-      <Button variant="ghost" m={0} p={0}>
-        <NextLink href={githubLink} passHref>
-          <LinkOverlay>
-            <Icon as={FaGithub}></Icon>
-          </LinkOverlay>
-        </NextLink>
-      </Button>
-    </LinkBox>
+    <ButtonLink link={githubLink} isExternal m={0} p={0} variant="ghost">
+      <Icon as={FaGithub} />
+    </ButtonLink>
   );
 
   const projectButton = projectLink && (
-    <LinkBox>
-      <Button variant="ghost" m={0} p={0}>
-        <NextLink href={projectLink} passHref>
-          <LinkOverlay>
-            <Icon as={FaExternalLinkAlt} />
-          </LinkOverlay>
-        </NextLink>
-      </Button>
-    </LinkBox>
+    <ButtonLink link={projectLink} isExternal m={0} p={0} variant="ghost">
+      <Icon as={FaExternalLinkAlt} />
+    </ButtonLink>
   );
 
   const tags = tech.map((val, idx) => (
