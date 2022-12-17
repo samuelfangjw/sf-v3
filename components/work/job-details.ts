@@ -8,7 +8,7 @@ const JobDetails: Job[] = [
   {
     company: "Voltality",
     roles: [
-      "Software Engineer (Part Time) | Aug 2022 - Present",
+      "Software Engineer (Part Time) | Aug - Dec 2022",
       "Software Engineer Intern | May - July 2022",
     ],
     achievements: [
