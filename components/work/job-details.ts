@@ -6,6 +6,15 @@ export type Job = {
 
 const JobDetails: Job[] = [
   {
+    company: "TEAMMATES (Open Source)",
+    roles: ["Project Lead | June 2021 - Present"],
+    achievements: [
+      "Maintainer for an online feedback management system for education used by more than 800,000 users worldwide.",
+      "Designed and planned multiple major feature enhancements.",
+      "Tech Stack: Angular, Typescript, Java, Google Cloud",
+    ],
+  },
+  {
     company: "Voltality",
     roles: [
       "Software Engineer (Part Time) | Aug - Dec 2022",
@@ -15,15 +24,6 @@ const JobDetails: Job[] = [
       "Designed and developed a customer facing system using Go, PostgreSQL, Redis, RabbitMQ and Nuxt.js to process specific transactions, aggregate statistics and run asynchronous tasks.",
       "Worked with a senior engineer to plan and execute the splitting of a Monolitic system into Microservices as well as a migration from MongoDB to PostgreSQL.",
       "Built a Redis based asynchronous task queue in Node.js to process and automatically schedule long running jobs.",
-    ],
-  },
-  {
-    company: "TEAMMATES (Open Source)",
-    roles: ["Maintainer/Contributor | June 2021 - Present"],
-    achievements: [
-      "Maintainer for an online feedback management system for education used by more than 800,000 users worldwide.",
-      "Designed and planned multiple major feature enhancements.",
-      "Tech Stack: Angular, Typescript, Java, Google Cloud",
     ],
   },
   {

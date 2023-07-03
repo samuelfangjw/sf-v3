@@ -1,6 +1,5 @@
 import Section from "../section";
 import {
-  Link,
   List,
   ListIcon,
   ListItem,
@@ -16,10 +15,11 @@ const Contact = () => {
   const color = useColorModeValue("orange.400", "orange.300");
 
   return (
-    <Section id="contact" title="Get In Touch">
+    <Section id="contact" title="Get in Touch">
       <Text marginBottom={8}>
-        I&apos;m always open to new opportunities, feel free to drop me a
-        message if you have any questions or just want to say hi!
+        Here&apos;s my contact information if you have any questions about my
+        past work! Do note however that unsolicited job offers and spam will be
+        ignored.
       </Text>
       <List spacing={2}>
         <ListItem>
@@ -50,7 +50,12 @@ const Contact = () => {
           <Text display="inline" fontWeight="bold">
             LinkedIn:
           </Text>
-          <TextLink link={constants.linkedin.value} color={color} marginLeft="10px" isExternal>
+          <TextLink
+            link={constants.linkedin.value}
+            color={color}
+            marginLeft="10px"
+            isExternal
+          >
             {constants.linkedin.display}
           </TextLink>
         </ListItem>

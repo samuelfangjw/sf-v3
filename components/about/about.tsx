@@ -5,11 +5,12 @@ import AboutPhoto from "./photo";
 
 const About = () => {
   const tagsArr = [
-    "Go",
-    "Java",
     "Typescript",
+    "Java",
     "PostgreSQL",
+    "Go",
     "MongoDB",
+    "Next.js",
     "Nuxt.js",
     "Angular",
     "Kubernetes",
@@ -35,20 +36,22 @@ const About = () => {
               extensible and maintainable software!
             </Text>
             <Text>
-              I&apos;m currently working as a full stack developer (part time)
-              at{" "}
+              I graduated with Honours (Highest Distinction) from the National
+              University of Singapore (NUS) with a Bachelor of Computing in
+              Computer Science with focus areas in Software Engineering and
+              Computer Security.
+            </Text>
+            <Text>
+              I&apos;m currently on post-graduation holiday till 2024 but still occasionally
+              volunteer my time towards the{" "}
               <TextLink
-                link="https://www.voltality.io"
+                link="https://github.com/TEAMMATES/teammates"
                 fontWeight="bold"
                 isExternal
               >
-                Voltality
-              </TextLink>
-              . I&apos;m also a final year student at the National University of
-              Singapore (NUS), pursuing a Bachelor of Computing in Computer
-              Science (Honours) and am on track to graduate with the Highest
-              Distinction honours degree classification with focus areas in
-              Software Engineering and Computer Security.
+                TEAMMATES
+              </TextLink>{" "}
+              project where I serve as the project lead.
             </Text>
             <Text>
               Here&apos;s some of the languages and tools I have been working

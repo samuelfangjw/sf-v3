@@ -27,6 +27,14 @@ const ProjectsData: Project[] = [
     tech: ["React", "Node.js"],
   },
   {
+    title: "Code Reuse Detector (CrED)",
+    description: "A tool designed as part of my final year project to aid plagiarism detection in brownfield software project variants. Currently used in a software engineering course at NUS.",
+    githubLink: "",
+    projectLink: "",
+    pageLink: "",
+    tech: ["Flask", "ANTLR", "Python"],
+  },
+  {
     title: "StrawHats",
     description:
       "A web auction site for collectibles with live video streaming and real-time bidding capabilities.",
@@ -43,6 +51,14 @@ const ProjectsData: Project[] = [
     projectLink: "",
     pageLink: "",
     tech: ["React", "Express", "deck.gl", "AWS"],
+  },
+  {
+    title: "The Summarizer",
+    description: "The Summarizer summarizes YouTube videos into short summaries.",
+    githubLink: "https://github.com/samuelfangjw/hnr2023",
+    projectLink: "",
+    pageLink: "",
+    tech: ["React", "Express", "AssemblyAI"],
   },
   {
     title: "CoLaB",
