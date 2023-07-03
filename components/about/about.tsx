@@ -42,7 +42,7 @@ const About = () => {
               Computer Security.
             </Text>
             <Text>
-              I&apos;m currently on post-graduation holiday till 2024 but still occasionally
+              I&apos;m currently on a post-graduation holiday till 2024 but still occasionally
               volunteer my time towards the{" "}
               <TextLink
                 link="https://github.com/TEAMMATES/teammates"
