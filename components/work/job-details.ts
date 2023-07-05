@@ -9,8 +9,9 @@ const JobDetails: Job[] = [
     company: "TEAMMATES (Open Source)",
     roles: ["Project Lead | June 2021 - Present"],
     achievements: [
-      "Maintainer for an online feedback management system for education used by more than 800,000 users worldwide.",
-      "Designed and planned multiple major feature enhancements.",
+      "Project lead for an online feedback management system for education used by more than 800,000 users worldwide.",
+      "Currently spearheading a major system redesign which includes a migration from a NoSQL to a SQL database expected to significantly improve performance of the system.",
+      "Designed and implemented multiple major feature enhancements including a deadline extension and account request feature.",
       "Tech Stack: Angular, Typescript, Java, Google Cloud",
     ],
   },
@@ -21,8 +22,8 @@ const JobDetails: Job[] = [
       "Software Engineer Intern | May - July 2022",
     ],
     achievements: [
-      "Designed and developed a customer facing system using Go, PostgreSQL, Redis, RabbitMQ and Nuxt.js to process specific transactions, aggregate statistics and run asynchronous tasks.",
-      "Worked with a senior engineer to plan and execute the splitting of a Monolitic system into Microservices as well as a migration from MongoDB to PostgreSQL.",
+      "Designed and developed a customer facing rewards system using Go, Nuxt.js, PostgreSQL and Redis.",
+      "Planned and executed the splitting of a Monolithic system into Microservices as well as a migration from MongoDB to PostgreSQL.",
       "Built a Redis based asynchronous task queue in Node.js to process and automatically schedule long running jobs.",
     ],
   },

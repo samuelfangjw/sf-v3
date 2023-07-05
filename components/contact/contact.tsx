@@ -18,7 +18,7 @@ const Contact = () => {
     <Section id="contact" title="Get in Touch">
       <Text marginBottom={8}>
         Here&apos;s my contact information if you have any questions about my
-        past work! Do note however that unsolicited job offers and spam will be
+        past work! Do note however that unsolicited job offers and spam may be
         ignored.
       </Text>
       <List spacing={2}>
