@@ -18,8 +18,7 @@ const Contact = () => {
     <Section id="contact" title="Get in Touch">
       <Text marginBottom={8}>
         Here&apos;s my contact information if you have any questions about my
-        past work! Do note however that unsolicited job offers and spam may be
-        ignored.
+        past work!
       </Text>
       <List spacing={2}>
         <ListItem>
@@ -29,7 +28,7 @@ const Contact = () => {
           </Text>
           <TextLink
             link={`mailto:${constants.email.value}`}
-            // color={color}
+            color={color}
             marginLeft="36px"
             isExternal
           >

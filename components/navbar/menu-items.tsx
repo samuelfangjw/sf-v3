@@ -29,9 +29,9 @@ const MenuItems = ({
         >
           About
         </ButtonLink>
-        <ButtonLink link="#work" onClick={onClose} variant="ghost" width="100%">
+        {/* <ButtonLink link="#work" onClick={onClose} variant="ghost" width="100%">
           Work
-        </ButtonLink>
+        </ButtonLink> */}
         <ButtonLink
           link="/#projects"
           onClick={onClose}
