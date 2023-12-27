@@ -1,4 +1,4 @@
-import { Link, Text, useColorModeValue } from "@chakra-ui/react";
+import { Link, useColorModeValue } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import NextLink from "next/link";
 
@@ -17,18 +17,18 @@ const TextLink = ({
   const linkHoverColor = useColorModeValue("orange.500", "orange.400");
 
   return (
-    <NextLink href={link} passHref>
-      <Link
-        color={linkColor}
-        _hover={{ color: linkHoverColor }}
-        textDecoration="underline"
-        display="inline"
-        {...(isExternal && { isExternal: true })}
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <Link
+      as={NextLink}
+      href={link}
+      color={linkColor}
+      _hover={{ color: linkHoverColor }}
+      textDecoration="underline"
+      display="inline"
+      {...(isExternal && { isExternal: true })}
+      {...props}
+    >
+      {children}
+    </Link>
   );
 };
 

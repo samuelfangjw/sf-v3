@@ -14,16 +14,15 @@ const ButtonLink = ({
   [key: string]: any;
 }) => {
   return (
-    <NextLink href={link} passHref>
-      <Button
-        as="a"
-        {...(isExternal && { target: "_blank" })}
-        {...(isExternal && { rel: "noopener noreferrer" })}
-        {...props}
-      >
-        {children}
-      </Button>
-    </NextLink>
+    <Button
+      as={NextLink}
+      href={link}
+      {...(isExternal && { target: "_blank" })}
+      {...(isExternal && { rel: "noopener noreferrer" })}
+      {...props}
+    >
+      {children}
+    </Button>
   );
 };
 

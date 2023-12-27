@@ -5,10 +5,10 @@ const AboutPhoto = () => {
     <Image
       src={"/me.jpeg"}
       alt="samuel"
-      layout="responsive"
-      width="767px"
-      height="767px"
+      width={767}
+      height={767}
       quality={100}
+      sizes="100vw"
     />
   );
 };
