@@ -25,7 +25,7 @@ const Footer = () => {
         top="0"
         my="1.5"
       >
-        <Button variant="ghost" onClick={scrollToTop}>
+        <Button variant="ghost" onClick={scrollToTop} aria-label="Back to Top">
           <ArrowUpIcon />
         </Button>
       </Box>

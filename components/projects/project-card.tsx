@@ -9,7 +9,6 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import NextLink from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import ButtonLink from "../button-link";
 import { Project } from "./project-details";
@@ -31,13 +30,13 @@ const ProjectCard = ({
   );
 
   const githubButton = githubLink && (
-    <ButtonLink link={githubLink} isExternal m={0} p={0} variant="ghost">
+    <ButtonLink link={githubLink} isExternal m={0} p={0} variant="ghost" aria-label="GitHub Page">
       <Icon as={FaGithub} />
     </ButtonLink>
   );
 
   const projectButton = projectLink && (
-    <ButtonLink link={projectLink} isExternal m={0} p={0} variant="ghost">
+    <ButtonLink link={projectLink} isExternal m={0} p={0} variant="ghost" aria-label="Project Page">
       <Icon as={FaExternalLinkAlt} />
     </ButtonLink>
   );
