@@ -9,6 +9,15 @@ export type Project = {
 
 const ProjectsData: Project[] = [
   {
+    title: "split",
+    description:
+      "A web app to keep track of group travel expenses on short travel trips with friends. Designed with convenience and privacy in mind.",
+    githubLink: "https://github.com/samuelfangjw/split",
+    projectLink: "",
+    pageLink: "",
+    tech: ["Next.js", "Typescript", "PostgreSQL", "Prisma"],
+  },
+  {
     title: "TEAMMATES",
     description:
       "An online feedback management system for education used by more than 800,000 users worldwide.",
@@ -28,7 +37,8 @@ const ProjectsData: Project[] = [
   },
   {
     title: "Code Reuse Detector (CrED)",
-    description: "A tool designed as part of my final year project to aid plagiarism detection in brownfield software project variants. Currently used in a software engineering course at NUS.",
+    description:
+      "A tool designed as part of my final year project to aid plagiarism detection in brownfield software project variants. Currently used in a software engineering course at NUS.",
     githubLink: "",
     projectLink: "",
     pageLink: "",
@@ -54,7 +64,8 @@ const ProjectsData: Project[] = [
   },
   {
     title: "The Summarizer",
-    description: "The Summarizer summarizes YouTube videos into short summaries.",
+    description:
+      "The Summarizer summarizes YouTube videos into short summaries.",
     githubLink: "https://github.com/samuelfangjw/hnr2023",
     projectLink: "",
     pageLink: "",
